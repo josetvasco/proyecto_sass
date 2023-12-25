@@ -1,8 +1,17 @@
 $primary-color: #FFEFE7;
 $secondary-color: #FFDAC6;
 $tertiary-color: #BABD8D;
+$quaternion-color: #FA9500;
 $primary-text-color: #7C6A0A;
 $font-stack: 'IBM Plex Sans', sans-serif;
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
 
 body {
   margin: 0;
@@ -12,15 +21,16 @@ body {
 }
 
 nav {
-  width: auto;
-  height: 100px;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
-  color: $primary-text-color;
+  height: 100px;
+  margin-bottom: 30px;
   padding: 0 20px;
+  color: $primary-text-color;
   p {
-    font-size: 1.5em;
+    font-size: 3.5rem;
+    margin-bottom: 15px;
   }
   .icons {
     display: flex;
@@ -32,11 +42,78 @@ nav {
   }
 }
 
-main {
-  background-color: $primary-color;
+article {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  color: $primary-text-color;
+  padding: 50px 30px;
+  .impact-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    h1 {
+      align-self: flex-start;
+      font-size: 3.8rem;
+      margin-bottom: 15px;
+    }
+    p {
+      font-size: 2.3rem;
+      margin-bottom: 30px;
+    }
+    button {
+      width: 160px;
+      padding: 20px;
+      border: none;
+      border-radius: 35px;
+      background-color: $quaternion-color;
+      color: white;
+      font-size: 1.8rem;
+    }
+  }
+  .image-section {
+    width: 100%;
+    img {
+      width: 100%;
+      border-radius: 19px;
+    }
+  }
 }
 
 footer {
   $background: #FA9500;
   background-color: $background;
 }
+
+@media (min-width: 930px) {
+  nav {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    p {
+      margin-bottom: 35px;
+    }
+  }
+
+  article {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    .impact-section {
+      flex-direction: column;
+      align-items: start;
+      width: 50%;
+    }
+    .image-section {
+      display: flex;
+      justify-content: end;
+      width: 50%;
+      img {
+        width: 70%;
+        border-radius: 19px;
+      }
+    }
+  }
+}
+
