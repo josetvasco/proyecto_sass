@@ -1,3 +1,42 @@
+$primary-color: #FFEFE7;
+$secondary-color: #FFDAC6;
+$tertiary-color: #BABD8D;
+$primary-text-color: #7C6A0A;
+$font-stack: 'IBM Plex Sans', sans-serif;
+
 body {
-  background-color: red;
+  margin: 0;
+  padding: 0;
+  background-color: $primary-color;
+  font-family: $font-stack;
+}
+
+nav {
+  width: auto;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: $primary-text-color;
+  padding: 0 20px;
+  p {
+    font-size: 1.5em;
+  }
+  .icons {
+    display: flex;
+    gap: 10px;
+    button {
+      background: none;
+      border: none;
+    }
+  }
+}
+
+main {
+  background-color: $primary-color;
+}
+
+footer {
+  $background: #FA9500;
+  background-color: $background;
 }

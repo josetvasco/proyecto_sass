@@ -1,3 +1,35 @@
 body {
-  background-color: red;
+  margin: 0;
+  padding: 0;
+  background-color: #FFEFE7;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+nav {
+  width: auto;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #7C6A0A;
+  padding: 0 20px;
+}
+nav p {
+  font-size: 1.5em;
+}
+nav .icons {
+  display: flex;
+  gap: 10px;
+}
+nav .icons button {
+  background: none;
+  border: none;
+}
+
+main {
+  background-color: #FFEFE7;
+}
+
+footer {
+  background-color: #FA9500;
 }/*# sourceMappingURL=main.css.map */
