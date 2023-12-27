@@ -81,6 +81,67 @@ article {
   }
 }
 
+section {
+  width: 100%;
+  height: auto;
+  padding: 60px 30px; 
+  h2 {
+    color: $primary-text-color;
+    font-size: 2.8rem;
+    font-weight: 300;
+    margin-bottom: 45px;
+  }
+  .healthcare {
+    margin-bottom: 60px;
+    .card-section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      column-gap: 100px;
+      row-gap: 80px;
+      width: auto;
+      height: auto;
+      .product-card {
+        width: 250px;
+        height: 500px;
+        padding: 20px;
+        border-radius: 8px;
+        background-color: $secondary-color;
+        color: $primary-text-color;
+        .icon {
+          display: flex;
+          justify-content: flex-end;
+          width: 100%;
+          padding-bottom: 12px;
+        }
+        .product-image {
+          display: flex;
+          justify-content: center;
+          align-items: center ;
+          width: 100%;
+          height: auto;
+          img {
+            width: 100%;
+            height: 299px;
+            object-fit: cover;
+            border-radius: 6px;
+          }
+        }
+        h3 {
+          font-size: 2rem;
+          margin-bottom: 0;
+        }
+        p {
+          font-size: 1.4rem;
+          margin-top: 0;
+        }
+      }
+    }
+  } 
+}
+
+
 footer {
   $background: #FA9500;
   background-color: $background;
