@@ -5,6 +5,20 @@ $quatenary-color: #FA9500;
 $primary-text-color: #7C6A0A;
 $font-stack: 'IBM Plex Sans', sans-serif;
 
+@mixin flexCenter ( $direction,$content,$align ) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $content;
+  align-items: $align;
+}
+
+@mixin borderStyle {
+  button {
+    background: none;
+    border: none;
+  }
+}
+
 * {
   box-sizing: border-box;
 }
@@ -21,9 +35,7 @@ body {
 }
 
 nav {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @include flexCenter( column, center, center);
   height: 100px;
   margin-bottom: 30px;
   padding: 0 20px;
@@ -35,23 +47,16 @@ nav {
   .icons {
     display: flex;
     gap: 10px;
-    button {
-      background: none;
-      border: none;
-    }
+    @include borderStyle();
   }
 }
 
 article {
-  display: flex;
-  flex-direction: column-reverse;
-  align-items: center;
+  @include flexCenter( column-reverse, center, center );
   color: $primary-text-color;
   padding: 50px 30px;
   .impact-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flexCenter( column, center, center );
     width: 100%;
     h1 {
       align-self: flex-start;
@@ -62,10 +67,10 @@ article {
       font-size: 2.3rem;
       margin-bottom: 30px;
     }
+    @include borderStyle();
     button {
       width: 160px;
       padding: 20px;
-      border: none;
       border-radius: 35px;
       background-color: $quatenary-color;
       color: white;
@@ -94,9 +99,7 @@ section {
   .healthcare {
     margin-bottom: 60px;
     .card-section {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      @include flexCenter( row, center, center );
       flex-wrap: wrap;
       column-gap: 100px;
       row-gap: 80px;
@@ -111,15 +114,12 @@ section {
       background-color: $secondary-color;
       color: $primary-text-color;
       .icon {
-        display: flex;
-        justify-content: flex-end;
+        @include flexCenter( row, flex-end, center);
         width: 100%;
         padding-bottom: 12px;
       }
       .product-image {
-        display: flex;
-        justify-content: center;
-        align-items: center ;
+        @include flexCenter( row, center, center);
         width: 100%;
         height: auto;
         img {
@@ -149,6 +149,9 @@ section {
 }
 
 
+
+
+
 footer {
   $background: #FA9500;
   background-color: $background;
@@ -156,26 +159,20 @@ footer {
 
 @media (min-width: 930px) {
   nav {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    @include flexCenter( row, space-between, center );
     p {
       margin-bottom: 35px;
     }
   }
 
   article {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: start;
+    @include flexCenter( row, space-between, start );
     .impact-section {
-      flex-direction: column;
-      align-items: start;
+      @include flexCenter( column, start, center );
       width: 50%;
     }
     .image-section {
-      display: flex;
-      justify-content: end;
+      @include flexCenter( row, end, center);
       width: 50%;
       img {
         width: 70%;

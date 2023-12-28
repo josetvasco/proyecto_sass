@@ -16,6 +16,7 @@ body {
 nav {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   height: 100px;
   margin-bottom: 30px;
@@ -38,6 +39,7 @@ nav .icons button {
 article {
   display: flex;
   flex-direction: column-reverse;
+  justify-content: center;
   align-items: center;
   color: #7C6A0A;
   padding: 50px 30px;
@@ -45,6 +47,7 @@ article {
 article .impact-section {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   width: 100%;
 }
@@ -58,9 +61,12 @@ article .impact-section p {
   margin-bottom: 30px;
 }
 article .impact-section button {
+  background: none;
+  border: none;
+}
+article .impact-section button {
   width: 160px;
   padding: 20px;
-  border: none;
   border-radius: 35px;
   background-color: #FA9500;
   color: white;
@@ -90,6 +96,7 @@ section .healthcare, section .furniture {
 }
 section .healthcare .card-section, section .furniture .card-section {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
@@ -109,12 +116,15 @@ section .healthcare .product-card, section .furniture .product-card {
 }
 section .healthcare .product-card .icon, section .furniture .product-card .icon {
   display: flex;
+  flex-direction: row;
   justify-content: flex-end;
+  align-items: center;
   width: 100%;
   padding-bottom: 12px;
 }
 section .healthcare .product-card .product-image, section .furniture .product-card .product-image {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -146,6 +156,7 @@ footer {
 
 @media (min-width: 930px) {
   nav {
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -154,18 +165,23 @@ footer {
     margin-bottom: 35px;
   }
   article {
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: start;
   }
   article .impact-section {
+    display: flex;
     flex-direction: column;
-    align-items: start;
+    justify-content: start;
+    align-items: center;
     width: 50%;
   }
   article .image-section {
     display: flex;
+    flex-direction: row;
     justify-content: end;
+    align-items: center;
     width: 50%;
   }
   article .image-section img {
