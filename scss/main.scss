@@ -148,7 +148,49 @@ section {
   }
 }
 
-
+.info-section {
+  padding-top: 0;
+  .about-us {
+    padding-bottom: 60px;
+    h2 {
+      font-weight: bold;
+      margin-bottom: 40px;
+    }
+    .mision-section {
+      width: 100%;
+      padding: 0 30px;
+      .earth {
+        @include flexCenter( column, center, center );
+        img {
+          width: 130px;
+          height: 130px;
+          margin: 15px;
+          object-fit: contain;
+        }
+        p {
+          color: $quatenary-color;
+          font-size: 1.8rem;
+          text-align: center;
+          font-weight: bold;
+        }
+      }
+      .innovation {
+        @include flexCenter( column, center, center );
+        img {
+          width: 130px;
+          height: 130px;
+          object-fit: contain;
+        }
+        p {
+          color: $quatenary-color;
+          font-size: 1.8rem;
+          text-align: center;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
 
 
 
@@ -177,6 +219,20 @@ footer {
       img {
         width: 70%;
         border-radius: 19px;
+      }
+    }
+  }
+
+  .info-section {
+    .about-us {
+      .mision-section {
+        @include flexCenter( row, space-evenly, center );
+        .earth {
+          @include flexCenter( row, center, center );
+        }
+        .innovation {
+          @include flexCenter( row, center, center );
+        }
       }
     }
   }

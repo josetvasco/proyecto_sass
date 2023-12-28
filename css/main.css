@@ -150,6 +150,58 @@ section .furniture .product-card {
   color: white;
 }
 
+.info-section {
+  padding-top: 0;
+}
+.info-section .about-us {
+  padding-bottom: 60px;
+}
+.info-section .about-us h2 {
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+.info-section .about-us .mision-section {
+  width: 100%;
+  padding: 0 30px;
+}
+.info-section .about-us .mision-section .earth {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.info-section .about-us .mision-section .earth img {
+  width: 130px;
+  height: 130px;
+  margin: 15px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.info-section .about-us .mision-section .earth p {
+  color: #FA9500;
+  font-size: 1.8rem;
+  text-align: center;
+  font-weight: bold;
+}
+.info-section .about-us .mision-section .innovation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.info-section .about-us .mision-section .innovation img {
+  width: 130px;
+  height: 130px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.info-section .about-us .mision-section .innovation p {
+  color: #FA9500;
+  font-size: 1.8rem;
+  text-align: center;
+  font-weight: bold;
+}
+
 footer {
   background-color: #FA9500;
 }
@@ -187,5 +239,23 @@ footer {
   article .image-section img {
     width: 70%;
     border-radius: 19px;
+  }
+  .info-section .about-us .mision-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .info-section .about-us .mision-section .earth {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .info-section .about-us .mision-section .innovation {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
   }
 }/*# sourceMappingURL=main.css.map */
