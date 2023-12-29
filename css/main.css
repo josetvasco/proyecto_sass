@@ -72,6 +72,10 @@ article .impact-section button {
   color: white;
   font-size: 1.8rem;
 }
+article .impact-section button:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
 article .image-section {
   width: 100%;
 }
@@ -160,46 +164,67 @@ section .furniture .product-card {
   font-weight: bold;
   margin-bottom: 40px;
 }
-.info-section .about-us .mision-section {
+.info-section .about-us .mission-section {
   width: 100%;
   padding: 0 30px;
 }
-.info-section .about-us .mision-section .earth {
+.info-section .about-us .mission-section .earth {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.info-section .about-us .mision-section .earth img {
+.info-section .about-us .mission-section .earth img {
   width: 130px;
   height: 130px;
   margin: 15px;
   -o-object-fit: contain;
      object-fit: contain;
 }
-.info-section .about-us .mision-section .earth p {
+.info-section .about-us .mission-section .earth p {
   color: #FA9500;
   font-size: 1.8rem;
   text-align: center;
   font-weight: bold;
 }
-.info-section .about-us .mision-section .innovation {
+.info-section .about-us .mission-section .innovation {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.info-section .about-us .mision-section .innovation img {
+.info-section .about-us .mission-section .innovation img {
   width: 130px;
   height: 130px;
   -o-object-fit: contain;
      object-fit: contain;
 }
-.info-section .about-us .mision-section .innovation p {
+.info-section .about-us .mission-section .innovation p {
   color: #FA9500;
   font-size: 1.8rem;
   text-align: center;
   font-weight: bold;
+}
+
+.gallery h2 {
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+.gallery .gallery-images {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 60px;
+}
+.gallery .gallery-images img {
+  width: 300px;
+  height: 320px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 16px;
+}
+.gallery .gallery-images img:hover {
+  transform: scale(1.1);
 }
 
 footer {
@@ -226,7 +251,7 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: start;
-    align-items: center;
+    align-items: start;
     width: 50%;
   }
   article .image-section {
@@ -240,19 +265,19 @@ footer {
     width: 70%;
     border-radius: 19px;
   }
-  .info-section .about-us .mision-section {
+  .info-section .about-us .mission-section {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
   }
-  .info-section .about-us .mision-section .earth {
+  .info-section .about-us .mission-section .earth {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
   }
-  .info-section .about-us .mision-section .innovation {
+  .info-section .about-us .mission-section .innovation {
     display: flex;
     flex-direction: row;
     justify-content: center;

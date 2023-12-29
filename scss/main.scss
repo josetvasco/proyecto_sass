@@ -75,6 +75,10 @@ article {
       background-color: $quatenary-color;
       color: white;
       font-size: 1.8rem;
+      &:hover {
+        transform: scale(1.1);
+        cursor: pointer;
+      }
     }
   }
   .image-section {
@@ -156,7 +160,7 @@ section {
       font-weight: bold;
       margin-bottom: 40px;
     }
-    .mision-section {
+    .mission-section {
       width: 100%;
       padding: 0 30px;
       .earth {
@@ -192,6 +196,28 @@ section {
   }
 }
 
+.gallery {
+  h2 {
+    font-weight: bold;
+    margin-bottom: 40px;
+  }
+  .gallery-images {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 60px;
+    img {
+      width: 300px;
+      height: 320px;
+      object-fit: cover;
+      border-radius: 16px;
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+
 
 
 footer {
@@ -210,7 +236,7 @@ footer {
   article {
     @include flexCenter( row, space-between, start );
     .impact-section {
-      @include flexCenter( column, start, center );
+      @include flexCenter( column, start, start );
       width: 50%;
     }
     .image-section {
@@ -225,7 +251,7 @@ footer {
 
   .info-section {
     .about-us {
-      .mision-section {
+      .mission-section {
         @include flexCenter( row, space-evenly, center );
         .earth {
           @include flexCenter( row, center, center );
